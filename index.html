@@ -2,13 +2,41 @@
 <head>
 	<script type="text/javascript" src="particles.js"></script>
 	<link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+  <script>
+  $(document).ready(function(){
+    $(".main").onepage_scroll({
+      sectionContainer: "section",
+      responsiveFallback: 600,
+      loop: true
+    });
+  });
+
+</script>
 </head>
 <body>
+  <div class="wrapper">
+	  <div class="main">
 
+      <section class="page1">
+        <div class="page_container">
 	<!-- particles.js container -->
 	<div id="particles-js"></div>
 	<!-- stats - count particles -->
+</div>
+</section>
+<section class="page2">
+       <div class="page_container">
+         <h1>About us</h1>
+         <h2>You want to get to know more about us? Here are some infos!</h2>
 
+         </code>
+       </div>
+     </section>
 	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
 		<script type="text/javascript" src="script.js"></script>
 			<script type="text/javascript" src="app.js"></script>
